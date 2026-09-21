@@ -2,7 +2,7 @@ import Constants from 'expo-constants';
 import { Ionicons } from '@expo/vector-icons';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { ReactNode, useEffect, useState } from 'react';
-import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { ActivityIndicator, Alert, Platform, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { registerWithEmail, signInWithEmail, signInWithGoogleIdToken } from '@/services/auth';
 import { auth } from '@/services/firebase';
 import { syncUserProfile } from '@/services/users';
@@ -11,7 +11,7 @@ import { colors, radius, spacing, typography } from '@/theme/tokens';
 
 type GoogleSigninModule = typeof import('@react-native-google-signin/google-signin');
 function getGoogleModule(): GoogleSigninModule | null {
-  if (Constants.appOwnership === 'expo') return null;
+  if (Constants.appOwnership === 'expo' || Platform.OS === 'web') return null;
   try {
     return require('@react-native-google-signin/google-signin');
   } catch {
