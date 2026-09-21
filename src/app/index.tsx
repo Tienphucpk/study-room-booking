@@ -7,6 +7,7 @@ import {
   FlatList,
   Image,
   Modal,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -484,7 +485,12 @@ function TicketCard({
             {booking.status === 'upcoming' && !past(booking.date, booking.slot) && (
               <Pressable
                 style={s.cancelTicketBtn}
-                onPress={() =>
+                onPress={() => {
+                  if (Platform.OS === 'web') {
+                    const ok = typeof window !== 'undefined' ? window.confirm('Hủy đặt phòng này? Khung giờ sẽ mở lại ngay cho các sinh viên khác.') : true;
+                    if (ok) cancel(booking.id);
+                    return;
+                  }
                   Alert.alert(
                     'Hủy đặt phòng này?',
                     'Khung giờ sẽ mở lại ngay cho các sinh viên khác.',
@@ -496,8 +502,8 @@ function TicketCard({
                         onPress: () => cancel(booking.id),
                       },
                     ]
-                  )
-                }
+                  );
+                }}
               >
                 <Text style={s.cancelTicketText}>Hủy</Text>
               </Pressable>

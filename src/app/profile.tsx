@@ -6,6 +6,7 @@ import {
   ActivityIndicator,
   Alert,
   Image,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -33,6 +34,7 @@ function ProfileScreen() {
   const user = auth.currentUser;
   const session = useBookingStore((state) => state.session);
   const login = useBookingStore((state) => state.login);
+  const logout = useBookingStore((state) => state.logout);
   const [name, setName] = useState(session?.studentName ?? '');
   const [saving, setSaving] = useState(false);
 
@@ -65,13 +67,31 @@ function ProfileScreen() {
     }
   }
 
+  async function handleSignOut() {
+    try {
+      await signOutUser();
+      logout();
+      router.replace('/');
+    } catch (error) {
+      console.error('Sign out error:', error);
+    }
+  }
+
   function confirmSignOut() {
+    if (Platform.OS === 'web') {
+      const ok = typeof window !== 'undefined' ? window.confirm('Bạn có chắc chắn muốn đăng xuất?') : true;
+      if (ok) {
+        void handleSignOut();
+      }
+      return;
+    }
+
     Alert.alert('Đăng xuất?', 'Bạn sẽ cần đăng nhập lại để sử dụng tính năng đặt phòng.', [
       { text: 'Ở lại', style: 'cancel' },
       {
         text: 'Đăng xuất',
         style: 'destructive',
-        onPress: () => void signOutUser().then(() => router.replace('/')),
+        onPress: () => void handleSignOut(),
       },
     ]);
   }
