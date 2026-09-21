@@ -1,0 +1,158 @@
+{
+  "project_info": {
+    "project_number": "175937838374",
+    "project_id": "apporder-9a092",
+    "storage_bucket": "apporder-9a092.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175937838374:android:8c084df2115aeeafcaf5e7",
+        "android_client_info": {
+          "package_name": "com.bom280605.studyroombooking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175937838374-o2je041mk6i939mte9oqialii4561fvo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bom280605.studyroombooking",
+            "certificate_hash": "70acd0a2ffb93cae4b490e6f904014fb5593980f"
+          }
+        },
+        {
+          "client_id": "175937838374-vitbq85kaqqp1vl6b8fhl1gljdtga3om.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bom280605.studyroombooking",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "175937838374-g0dauoqcmcr6i1kf2rbiejad05tn9f3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxArKcstLfe1vzqCBbH1cVSRKN9lOfps0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175937838374-g0dauoqcmcr6i1kf2rbiejad05tn9f3l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "175937838374-iebaunq1lqjlfier1pdfhg02rtl1kt2l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.expenseTracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175937838374:android:ba5656cdca14dc2ecaf5e7",
+        "android_client_info": {
+          "package_name": "com.example.apporder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175937838374-3qca3t7pb4q05ds3fi8jfi34p2km25rp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apporder",
+            "certificate_hash": "9bda451a79064fe4f8d0b25e99898412b7532d4c"
+          }
+        },
+        {
+          "client_id": "175937838374-uieej32fs0vh1p16qdj816k4dm1948sk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apporder",
+            "certificate_hash": "70acd0a2ffb93cae4b490e6f904014fb5593980f"
+          }
+        },
+        {
+          "client_id": "175937838374-g0dauoqcmcr6i1kf2rbiejad05tn9f3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxArKcstLfe1vzqCBbH1cVSRKN9lOfps0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175937838374-g0dauoqcmcr6i1kf2rbiejad05tn9f3l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "175937838374-iebaunq1lqjlfier1pdfhg02rtl1kt2l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.expenseTracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175937838374:android:2257a70af79158fecaf5e7",
+        "android_client_info": {
+          "package_name": "com.example.expense_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175937838374-543m0rcb1olnb2m3npft17ar02nknl48.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.expense_tracker",
+            "certificate_hash": "9bda451a79064fe4f8d0b25e99898412b7532d4c"
+          }
+        },
+        {
+          "client_id": "175937838374-g0dauoqcmcr6i1kf2rbiejad05tn9f3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxArKcstLfe1vzqCBbH1cVSRKN9lOfps0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175937838374-g0dauoqcmcr6i1kf2rbiejad05tn9f3l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "175937838374-iebaunq1lqjlfier1pdfhg02rtl1kt2l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.expenseTracker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
